@@ -79,7 +79,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+              <a href="<?php echo base_url() ?>" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -94,27 +94,27 @@
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Without menu">Tahun Ajaran</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-without-navbar.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Without navbar">Program Studi</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-container.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Container">Mata Kuliah</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-fluid.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Fluid">Data Mahasiswa</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-blank.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Blank">Data Dosen</div>
                   </a>
                 </li>
@@ -125,51 +125,51 @@
               <span class="menu-header-text">Pages</span>
             </li>
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">Setup Perkuliahan</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pages-account-settings-account.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Account">Jadwal Perkuliahan</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-account-settings-notifications.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Notifications">Jadwal Perwalian</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-account-settings-connections.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Connections">Jadwal UTS</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-account-settings-connections.html" class="menu-link">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
                     <div data-i18n="Connections">Jadwal UAS</div>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                 <div data-i18n="Authentications">Privacy</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link" target="_blank">
                     <div data-i18n="Basic">Login</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link" target="_blank">
                     <div data-i18n="Basic">Register</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
+                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link" target="_blank">
                     <div data-i18n="Basic">Forgot Password</div>
                   </a>
                 </li>
@@ -303,7 +303,7 @@
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">Siakad Simulation</a>
                 </div>
                 <div>
                   <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
