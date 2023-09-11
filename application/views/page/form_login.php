@@ -70,9 +70,10 @@
               </div>
               <!-- /Logo -->
               <h4 class="mb-2">Welcome to SIAKAD ! 👋</h4>
-              <p class="mb-4">Please sign-in to your account</p>
+              <p class="mb-4">Please sign-in to your account </p>
+              <p class="mb-4"><?php echo validation_errors(); ?></p>
               <p><?php echo $this->session->flashdata('message_login_error') ?></p>
-              <form id="formAuthentication" class="mb-3" action="<?php echo base_url() ?>Login/login" method="POST">
+              <form id="formAuthentication" class="mb-3" action="<?php echo base_url() ?>Auth/login" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
                   <input

@@ -53,7 +53,7 @@
                               <a class="dropdown-item" href="<?php echo base_url() ?>Tahun_ajaran/form_edit_thn_ajar/<?php echo $result->id ?>" >
                                 <i class="bx bx-edit-alt me-1"></i> Edit
                               </a>
-                              <a class="dropdown-item" href="<?php echo base_url() ?>Tahun_ajaran/delete_thn_ajar/ <?php echo $result->id ?>"><i class="bx bx-trash me-1"></i> Delete</a>
+                              <a class="dropdown-item" href="<?php echo base_url() ?>Tahun_ajaran/proses_delete_thn_ajar/<?php echo $result->id ?>"><i class="bx bx-trash me-1"></i> Delete</a>
                             </div>
                           </div>
                         </td>

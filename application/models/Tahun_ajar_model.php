@@ -24,4 +24,8 @@ class Tahun_ajar_model extends CI_Model{
         $query = $this->db->update('tbl_thn_ajar', $data, array('id' => $id));
         return $query;
     }
+    public function delete($id){
+        $query= $this->db->delete('tbl_thn_ajar',array('id'=>$id));
+        return $query;
+    }
 }

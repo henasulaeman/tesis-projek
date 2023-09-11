@@ -48,5 +48,11 @@ class Tahun_ajaran extends CI_Controller {
 		redirect('Tahun_ajaran');
 
 	}
+
+	public function proses_delete_thn_ajar(){
+		$id = $this->uri->segment(3);
+		$this->Tahun_ajar_model->delete($id);
+		redirect('Tahun_ajaran');
+	}
 	
 }

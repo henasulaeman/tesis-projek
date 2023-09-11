@@ -28,15 +28,15 @@ class Auth_model extends CI_Model{
 
         // Cek apakah user sudah terdaftar ?
         if(!$user){
-            // return FALSE;
-            echo "Usernmae tidak ada di sistem";
+             return FALSE;
+            // echo "Usernmae tidak ada di sistem";
         }
 
         // Cek apakah passwordnya benar ?
-        if(!password_verify($password,$user->password)){
-            // return FALSE;
-            echo  "Password Salah";
+        if($password!=$user->password){
+            return FALSE;
         }
+       
 
 
         // Create Session
@@ -54,7 +54,7 @@ class Auth_model extends CI_Model{
         
         $userid = $this->session->userdata(self::SESSION_KEY);
         $query = $this->db->get_where($this->_table, ['iduser'=>$userid]);
-        return $query->row;
+        return $query->row_array();
     }
 
     public function logout(){
