@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+date_default_timezone_set("Asia/Kolkata");
 
 class Tahun_ajaran extends CI_Controller {
 
@@ -16,10 +17,12 @@ class Tahun_ajaran extends CI_Controller {
 		$tahun_ajar = $this->input->post('thn_ajar');
 		$status     = $this->input->post('status_thn_ajar');
 		$semester   = $this->input->post('semester');
+		$date_post  = date('Y-m-d H:i:s');
 
-		$data_thn_ajar = array('thn_ajaran'=>$tahun_ajar, 'status'=>$status, 'semester'=>$semester);
+		$data_thn_ajar = array('tahun_ajaran'=>$tahun_ajar, 'status'=>$status, 'semester'=>$semester,'datepost'=>$date_post);
 
 		$this->Tahun_ajar_model->insert('tbl_thn_ajar', $data_thn_ajar);
+		redirect('Tahun_ajaran');
 
 	}
 
@@ -40,8 +43,9 @@ class Tahun_ajaran extends CI_Controller {
 		$tahun_ajar = $this->input->post('thn_ajar');
 		$status     = $this->input->post('status_thn_ajar');
 		$semester   = $this->input->post('semester');
-
-		$data_thn_ajar = array('tahun_ajaran'=>$tahun_ajar, 'status'=>$status, 'semester'=>$semester);
+		$date_post  = date('Y-m-d H:i:s');
+		
+		$data_thn_ajar = array('tahun_ajaran'=>$tahun_ajar, 'status'=>$status, 'semester'=>$semester,'datepost'=>$date_post);
 
 		$this->Tahun_ajar_model->update($id,$data_thn_ajar);
 
