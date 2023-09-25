@@ -104,7 +104,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
+                  <a href="<?php echo base_url() ?>Matakuliah" class="menu-link">
                     <div data-i18n="Container">Mata Kuliah</div>
                   </a>
                 </li>
