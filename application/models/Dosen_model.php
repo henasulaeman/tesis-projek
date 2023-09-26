@@ -1,6 +1,6 @@
 <?php
 
-class Matakuliah_model extends CI_Model{
+class Dosen_model extends CI_Model{
 
     public function insert($table, $data){
 
@@ -12,20 +12,19 @@ class Matakuliah_model extends CI_Model{
         $query = $this->db->get();
         return $query->result();
     }
-
-    public function edit($id_matkul){
+     public function edit($id_dosen){
        
-        $query =  $this->db->get_where('tbl_matakuliah', array('id_matkul' => $id_matkul));
+        $query =  $this->db->get_where('tbl_dosen', array('id_dosen' => $id_dosen));
         return $query->row_array();
     }
-    public function update($id_matkul,$data){
+    public function update($id_dosen,$data){
         // $this->db->where('id_prodi',$id_prodi);
         // $this->db->update('tbl_program_studi',$data);
-        $query = $this->db->update('tbl_matakuliah', $data, array('id_matkul' => $id_matkul));
+        $query = $this->db->update('tbl_dosen', $data, array('id_dosen' => $id_dosen));
         return $query;
     }
-    public function delete($id_matkul){
-        $query= $this->db->delete('tbl_matakuliah',array('id_matkul'=>$id_matkul));
+    public function delete($id_dosen){
+        $query= $this->db->delete('tbl_dosen',array('id_dosen'=>$id_dosen));
         return $query;
     }
 }

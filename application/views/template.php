@@ -109,12 +109,12 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
+                  <a href="<?php echo base_url() ?>Mahasiswa" class="menu-link">
                     <div data-i18n="Fluid">Data Mahasiswa</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?php echo base_url() ?>Tahun_ajaran" class="menu-link">
+                  <a href="<?php echo base_url() ?>Dosen" class="menu-link">
                     <div data-i18n="Blank">Data Dosen</div>
                   </a>
                 </li>
