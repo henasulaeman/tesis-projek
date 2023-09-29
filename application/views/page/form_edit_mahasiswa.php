@@ -13,7 +13,7 @@
                       <small class="text-muted float-end">Tambah Mahasiswa</small>
                     </div>
                     <div class="card-body">
-                      <form action="<?php echo base_url() ?>Mahasiswa/proses_update_mahasiswa//<?php echo $dt_dosen['id_mhs'] ?>" method="POST">
+                      <form action="<?php echo base_url() ?>Mahasiswa/proses_update_mahasiswa//<?php echo $dt_mahasiswa['id_mhs'] ?>" method="POST">
                       <div class="row mb-3">
                           <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">NPM</label>
                           <div class="col-sm-10">

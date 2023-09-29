@@ -39,11 +39,12 @@ class Mahasiswa extends CI_Controller {
 	public function form_edit_mahasiswa(){
 		$id = $this->uri->segment(3);
 		$data['dt_mahasiswa'] = $this->Mahasiswa_model->edit($id);
-		//$data['dt_prodi'] = $this->Prodi_model->show('tbl_program_studi');
+		$data['dt_prodi'] = $this->Prodi_model->show('tbl_program_studi');
 		$this->template_lib->load('template','/page/form_edit_mahasiswa',$data);
 	}
 
 	public function proses_update_mahasiswa(){
+		$id = $this->uri->segment(3);
 		$npm         = $this->input->post('npm');
 		$nama_mhs    = $this->input->post('nama_mhs');
 		$email_mhs   = $this->input->post('email_mhs');
@@ -62,4 +63,12 @@ class Mahasiswa extends CI_Controller {
 
 
 	}
+
+	public function proses_delete_mahasiswa(){
+		$id = $this->uri->segment(3);
+		$this->Mahasiswa_model->delete($id);
+		redirect('Mahasiswa');
+	}
+
+
 }
